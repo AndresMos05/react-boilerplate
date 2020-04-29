@@ -13,7 +13,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "npm run lint"
+      "pre-commit": "npx pretty-quick --staged && npm run lint && npm run test "
     }
   },
   "author": "",
@@ -36,7 +36,8 @@
     "eslint-plugin-react": "^7.19.0",
     "html-webpack-plugin": "^4.2.1",
     "jest": "^25.5.1",
-    "prettier": "2.0.5",
+    "prettier": "^2.0.5",
+    "pretty-quick": "^2.0.1",
     "style-loader": "^1.2.1",
     "webpack": "^4.43.0",
     "webpack-bundle-analyzer": "^3.7.0",
